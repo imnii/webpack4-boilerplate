@@ -1,0 +1,28 @@
+/*
+===================================
+FORM
+===================================
+*/
+.form {
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__control {
+    background-color: #38383d;
+    border: 1px solid #5f5f63;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.5);
+    color: #e1e1e1;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: all 0.2s;
+    width: 100%;
+
+    &:focus {
+      border-color: #45A1FF;
+      box-shadow: 0 0 0 1px #45A1FF, 0 0 0 4px #2e5a88;
+      outline: 0;
+    }
+  }
+}

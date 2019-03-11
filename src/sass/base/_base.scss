@@ -1,0 +1,22 @@
+/*
+===================================
+BASE
+===================================
+*/
+:root {
+  font-size: $root;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $black;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  text-rendering: optimizeLegibility;
+}

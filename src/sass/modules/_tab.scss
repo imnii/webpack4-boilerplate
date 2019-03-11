@@ -1,0 +1,76 @@
+/*
+===================================
+TAB
+===================================
+*/
+.tab {
+  &__menu {
+    display: flex;
+    list-style: none;
+    margin-right: -5px;
+    margin-bottom: 0;
+    margin-left: -5px;
+    padding: 0;
+
+    &-button {
+      background-color: #fafafa;
+      border: 1px solid transparent;
+      cursor: pointer;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      transition: all 0.3s;
+
+      &:focus {
+        background-color: #eaeaea;
+        outline: 0;
+      }
+      &:hover {
+        background-color: #eaeaea;
+      }
+
+    }
+
+    &-item {
+      flex: 1;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    &-item--active {
+      .tab__menu-button {
+        background-color: #24bab9;
+        color: #ffffff;
+        transition: background-color 0.5s;
+      }
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    position: relative;
+
+    &-item {
+      background-color: #fafafa;
+      display: none;
+      padding: 30px;
+    }
+    
+    &-item--active {
+      display: block;
+      animation: 0.4s linear 0s forwards fadeIn;
+      transform-origin: top;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
